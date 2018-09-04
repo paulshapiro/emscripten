@@ -33,21 +33,19 @@ This comprehensive documentation set contains everything you need to know to use
 The full hierarchy of articles, opened to the second level, is shown below.
 
 .. toctree::
-	:maxdepth: 2
-   
-	introducing_emscripten/index
-	getting_started/index
-	porting/index
-	optimizing/Optimizing-Code
-	optimizing/Optimizing-WebGL
-	optimizing/Profiling-Toolchain
-	compiling/index
-	building_from_source/index
-	contributing/index
-	api_reference/index
-	tools_reference/index
-	debugging/CyberDWARF
-	site/index
+  :maxdepth: 2
 
-
-   
+  index
+  introducing_emscripten/index
+  getting_started/index
+  porting/index
+  optimizing/Optimizing-Code
+  optimizing/Optimizing-WebGL
+  optimizing/Profiling-Toolchain
+  compiling/index
+  building_from_source/index
+  contributing/index
+  api_reference/index
+  tools_reference/index
+  debugging/CyberDWARF
+  site/index

@@ -215,17 +215,17 @@ appears in the generated code. This will be the same as the original C
 function, but with a leading ``_``.
 
 .. note:: If you use :js:func:`ccall` or :js:func:`cwrap`, you do not need
-   to prefix function calls with ``_`` — just use the C name.
+   to prefix function calls with ``_`` -- just use the C name.
 
 The types of the parameters you pass to functions need to make sense.
 Integers and floating point values can be passed as is. Pointers are
 simply integers in the generated code.
 
 Strings in JavaScript must be converted to pointers for compiled
-code — the relevant function is :js:func:`Pointer_stringify`, which
+code -- the relevant function is :js:func:`Pointer_stringify`, which
 given a pointer returns a JavaScript string. Converting a JavaScript
 string ``someString`` to a pointer can be accomplished using ``ptr = ``
-:js:func:`allocate(intArrayFromString(someString), 'i8', ALLOC_NORMAL) <allocate>`.
+allocate(intArrayFromString(someString), 'i8', ALLOC_NORMAL) <allocate>``.
 
 .. note:: The conversion to a pointer allocates memory, which needs to be
    freed up via a call to ``free(ptr)`` afterwards (``_free`` in JavaScript side)

@@ -141,6 +141,16 @@ jobs:
             - .config/X11/xorg.conf
             - .config/openbox/autostart
             - .config/autostart/at-spi-dbus-bus.desktop
+  build-docs:
+    <<: *defaults
+    steps:
+      - checkout
+      - run:
+          name: install sphinx
+          command: |
+            apt-get update -q
+            apt-get install -q -y python-sphinx
+      - run: make -C site html
   flake8:
     <<: *defaults
     steps:
@@ -282,6 +292,7 @@ workflows:
   build-test:
     jobs:
       - flake8
+      - build-docs
       - build
       - test-other:
           requires:

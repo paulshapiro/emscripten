@@ -120,9 +120,9 @@ Version numbers
 
 Bisecting across multiple git trees can be hard. We use version numbers to help synchronize points between them:
 
-- `emscripten-version.txt <https://github.com/kripken/emscripten/blob/master/emscripten-version.txt>`_ in Emscripten
-- `emscripten-version.txt <https://github.com/kripken/emscripten-fastcomp/blob/master/emscripten-version.txt>`_ in fastcomp (llvm)
-- `emscripten-version.txt <https://github.com/kripken/emscripten-fastcomp-clang/blob/master/emscripten-version.txt>`_ in fastcomp-clang (clang)
+- `emscripten-version.txt <https://github.com/kripken/emscripten/blob/master/emscripten-version.txt>`__ in Emscripten
+- `emscripten-version.txt <https://github.com/kripken/emscripten-fastcomp/blob/master/emscripten-version.txt>`__ in fastcomp (llvm)
+- `emscripten-version.txt <https://github.com/kripken/emscripten-fastcomp-clang/blob/master/emscripten-version.txt>`__ in fastcomp-clang (clang)
 
 Version numbers are typically ``X.Y.Z`` where:
 
