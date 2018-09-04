@@ -232,29 +232,6 @@ namespace emscripten {
     // POLICIES
     ////////////////////////////////////////////////////////////////////////////////
 
-    template<int Index>
-    struct arg {
-        static constexpr int index = Index + 1;
-    };
-
-    struct ret_val {
-        static constexpr int index = 0;
-    };
-
-    /*
-    template<typename Slot>
-    struct allow_raw_pointer {
-        template<typename InputType, int Index>
-        struct Transform {
-            typedef typename std::conditional<
-                Index == Slot::index,
-                internal::AllowedRawPointer<typename std::remove_pointer<InputType>::type>,
-                InputType
-            >::type type;
-        };
-    };
-    */
-
     // whitelist all raw pointers
     struct allow_raw_pointers {
         template<typename InputType, int Index>

@@ -1,8 +1,8 @@
 .. _bind-h:
 
-================================
+===========================
 bind.h (under-construction)
-================================
+===========================
 
 The C++ APIs in `bind.h <https://github.com/kripken/emscripten/blob/master/system/include/emscripten/bind.h>`_ define (**HamishW**-Replace with description.)
 
